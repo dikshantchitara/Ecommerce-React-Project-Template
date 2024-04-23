@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
-
+import { Link } from "react-router-dom";
 /* eslint-disable no-unused-vars */
 /* global getProductById */
 
@@ -163,9 +163,9 @@ export default function ProductDetails() {
                     >
                       &times;
                     </span>
-                    <Button variant="primary" onClick={handleCheckout}>
-                      Checkout
-                    </Button>
+                    <Link to={`/checkout/${product.id}`}>
+                      <button>Add to Cart</button>
+                    </Link>
                   </div>
                 </li>
               ))}

@@ -24,7 +24,7 @@ export default function App() {
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="news" element={<News />} />
           <Route path="products" element={<Products />} />
-          <Route path="checkout" element={<Checkout />} />
+          <Route path="checkout/:productId" element={<Checkout />} />
           <Route path="products/:productId" element={<ProductDetails />} />
           <Route path="*" element={<NoPage />} />
         </Route>
