@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import './checkout.css'
+import Footer from "./Footer";
 // Function to fetch product by ID
 
 function getProductById(productId) {
@@ -91,9 +92,9 @@ const Checkout = () => {
     }
 
     return (
-      <div className="product-item">
+      <div className="product-item-checkout">
         <img src={`/${product.image}`} alt={product.name} />
-        <div className="product-info">
+        <div className="product-info-checkout">
           <h3>{product.name}</h3>
           <p>{product.price}</p>
         </div>
@@ -102,12 +103,12 @@ const Checkout = () => {
   };
 
   return (
-    <div className="checkout-container">
+    <><div className="checkout-container-placeorder">
       {/* Left side: Address details */}
       <div className="address-details">
         <h2>Address Details</h2>
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="form-group-checkout">
             <label htmlFor="fullName">Full Name:</label>
             <input
               type="text"
@@ -115,10 +116,9 @@ const Checkout = () => {
               name="fullName"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
-              required
-            />
+              required />
           </div>
-          <div className="form-group">
+          <div className="form-group-checkout">
             <label htmlFor="address">Address:</label>
             <textarea
               id="address"
@@ -128,7 +128,7 @@ const Checkout = () => {
               required
             ></textarea>
           </div>
-          <div className="form-group">
+          <div className="form-group-checkout">
             <label htmlFor="city">City:</label>
             <input
               type="text"
@@ -136,10 +136,9 @@ const Checkout = () => {
               name="city"
               value={city}
               onChange={(e) => setCity(e.target.value)}
-              required
-            />
+              required />
           </div>
-          <div className="form-group">
+          <div className="form-group-checkout">
             <label htmlFor="zipCode">Zip Code:</label>
             <input
               type="text"
@@ -147,8 +146,7 @@ const Checkout = () => {
               name="zipCode"
               value={zipCode}
               onChange={(e) => setZipCode(e.target.value)}
-              required
-            />
+              required />
           </div>
           {/* Add more fields as needed */}
           <button type="submit">Place Order</button>
@@ -160,7 +158,7 @@ const Checkout = () => {
         <h2>Product Details</h2>
         <div className="product-list">{renderProductDetails()}</div>
       </div>
-    </div>
+    </div><Footer /></>
   );
 };
 
