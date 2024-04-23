@@ -164,7 +164,7 @@ export default function ProductDetails() {
                       &times;
                     </span>
                     <Link to={`/checkout/${product.id}`}>
-                      <button>Add to Cart</button>
+                      <button>Buy Now!</button>
                     </Link>
                   </div>
                 </li>

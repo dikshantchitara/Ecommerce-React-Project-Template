@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-
+import './checkout.css'
 // Function to fetch product by ID
 
 function getProductById(productId) {
@@ -82,11 +82,9 @@ const Checkout = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Perform form validation here
-    // You can also submit the form data to a backend server
   };
 
-  // Function to render product details
+
   const renderProductDetails = () => {
     if (!product) {
       return <p>Product not found!</p>;
@@ -94,11 +92,10 @@ const Checkout = () => {
 
     return (
       <div className="product-item">
-        <img src={product.image} alt={product.name} />
+        <img src={`/${product.image}`} alt={product.name} />
         <div className="product-info">
           <h3>{product.name}</h3>
           <p>{product.price}</p>
-          {/* Add more product details here if needed */}
         </div>
       </div>
     );
