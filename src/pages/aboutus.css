@@ -1,0 +1,43 @@
+.about-us-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-us-container {
+    /* display: flex; */
+    flex-direction: row-reverse;
+    /* Reverse the direction to place the image on the left */
+    max-width: 1000px;
+}
+
+.about-us-content {
+    flex: 1;
+}
+
+.about-us-text {
+    padding: 20px;
+        text-align: center;
+}
+
+.about-us-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-us-header {
+    margin-bottom: 20px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-vision div {
+    width: 45%;
+    /* Adjust width as needed */
+}
+
+/* Add any additional styling as required */

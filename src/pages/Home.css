@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet');
+h1{
+    font-family: "Sofia", cursive;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        color : #f7fa39;
+      
+}
+
+
+.container
+{
+    max-width: 100% !important;
+}
+.news-containe r {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.article-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.article-card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.article-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
+.article-content {
+    padding: 1px;
+}
+.article-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.article-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.article-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.article-link:hover {
+    color: #007bff;
+}
+
+
+.footer {
+    background-color: #000;
+
+    color: #fff;
+
+    padding: 50px 0;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-column h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* Home.css */
+
+.custom-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card .card-body {
+    padding: 20px;
+}
+
+.custom-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.custom-card .card-text {
+    color: #6c757d;
+}
+
+footer h2{
+    text-align: justify;
+}
