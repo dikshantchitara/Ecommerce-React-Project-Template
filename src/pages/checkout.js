@@ -104,7 +104,7 @@ const Checkout = () => {
 
   return (
     <><div className="checkout-container-placeorder">
-      {/* Left side: Address details */}
+
       <div className="address-details">
         <h2>Address Details</h2>
         <form onSubmit={handleSubmit}>
