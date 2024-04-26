@@ -12,6 +12,7 @@ import News from "./pages/news";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetail";
 import Checkout from "./pages/checkout";
+import Faq from "./pages/Faq";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="news" element={<News />} />
           <Route path="products" element={<Products />} />
+          <Route path="faq" element={<Faq />} />
           <Route path="checkout/:productId" element={<Checkout />} />
           <Route path="products/:productId" element={<ProductDetails />} />
           <Route path="*" element={<NoPage />} />

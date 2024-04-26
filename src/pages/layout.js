@@ -66,7 +66,11 @@ const Layout = () => {
               News
             </Link>
           </li>
-
+          <li style={liStyle}>
+            <Link to="/faq" style={linkStyle}>
+              FAQ
+            </Link>
+          </li>
           <li style={liStyle}>
             {user ? (
               <button className="button-40" onClick={handleLogout}>
@@ -78,7 +82,6 @@ const Layout = () => {
               </button>
             )}
           </li>
-          
         </ul>
       </nav>
 
