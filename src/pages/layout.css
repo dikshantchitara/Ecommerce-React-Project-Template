@@ -38,3 +38,11 @@ button:focus {
         padding: .75rem 1.5rem;
     }
 }
+
+nav li {
+    font-size: 23px !important;
+    font-family: "Abril Fatface", cursive;
+}
+nav{
+        text-align: center;
+}

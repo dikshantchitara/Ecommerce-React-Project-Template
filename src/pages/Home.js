@@ -51,7 +51,6 @@ const Home = () => {
           </Col>
         ))}
       </Row>
-
       {/* Custom card feature */}
       <h2 className="mt-5">WE BELIVE CUSTOMER SATISFACTION</h2>
       <Row>
@@ -107,6 +106,60 @@ const Home = () => {
             </Card.Body>
           </Card>
         </Col>
+      </Row>
+      <Row>
+        <div className="testimonials">
+          <h2 className="text-center">Our Customer Reviews </h2>
+          <Carousel fade>
+            <Carousel.Item>
+              <div className="testimonial-content">
+                <img
+                  className="d-block mx-auto testimonial-img"
+                  src="https://via.placeholder.com/150"
+                  alt="First slide"
+                />
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam malesuada est non dui posuere, a faucibus mauris
+                  blandit."
+                </p>
+                <p className="customer-name">- John Doe</p>
+                <p className="rating">⭐️⭐️⭐️⭐️⭐️</p>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="testimonial-content">
+                <img
+                  className="d-block mx-auto testimonial-img"
+                  src="https://via.placeholder.com/150"
+                  alt="First slide"
+                />
+                <p>
+                  "Vestibulum consectetur nunc in arcu dapibus, vel mattis eros
+                  placerat. Praesent tristique, orci nec sodales aliquet, sapien
+                  metus tincidunt ante."
+                </p>
+                <p className="customer-name">- Jane Doe</p>
+                <p className="rating">⭐️⭐️⭐️⭐️</p>
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="testimonial-content">
+                <img
+                  className="d-block mx-auto testimonial-img"
+                  src="https://via.placeholder.com/150"
+                  alt="First slide"
+                />
+                <p>
+                  "Fusce quis fringilla urna. Sed at aliquam mi. Proin eleifend
+                  dolor sed justo dapibus, non cursus nisi pellentesque."
+                </p>
+                <p className="customer-name">- Michael Smith</p>
+                <p className="rating">⭐️⭐️⭐️</p>
+              </div>
+            </Carousel.Item>
+          </Carousel>
+        </div>
       </Row>
       <Row>
         <Accordion>

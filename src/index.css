@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sofia&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
 body {
   margin: 0;
   font-family: "Oswald", sans-serif !important;
