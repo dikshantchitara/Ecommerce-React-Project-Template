@@ -82,7 +82,7 @@ export default function ProductDetails() {
             </p>
           </p>
           <p className="product-price">Price: {product.price}</p>
-          <button className="product-button" onClick={() => setShowPopup(true)}>
+          <button className="product-button-addcart" onClick={() => setShowPopup(true)}>
             Add to cart
           </button>
         </div>
@@ -164,7 +164,7 @@ export default function ProductDetails() {
                       &times;
                     </span>
                     <Link to={`/checkout/${product.id}`}>
-                      <button>Buy Now!</button>
+                      <button className="buynow-button">Buy Now!</button>
                     </Link>
                   </div>
                 </li>

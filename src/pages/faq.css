@@ -26,7 +26,7 @@
             box-sizing: border-box;
             min-height: 100vh;
             padding: 1.1rem 1.3rem;
-            background-color: #FFE3E1;
+            background-color: #FFF5E4 !important;
             width: 80%;
             margin: auto;
             font-family: "Source Sans Pro", sans-serif;
@@ -44,8 +44,8 @@
      }
 
      input[type=radio]:checked+.item .title {
-         color: #fff;
-         border-color: #FF9494;
+         color: #FF9494;
+         border-color: #FF9494; 
          background-color: #FFE3E1;
      }
 

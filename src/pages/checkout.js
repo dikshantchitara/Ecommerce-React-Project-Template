@@ -149,7 +149,7 @@ const Checkout = () => {
               required />
           </div>
           {/* Add more fields as needed */}
-          <button type="submit">Place Order</button>
+          <button type="submit" className="placeorder-checkout">Place Order</button>
         </form>
       </div>
 

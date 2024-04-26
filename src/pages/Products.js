@@ -125,9 +125,12 @@ export default function Products() {
                       alt={product.name}
                       className="product-image"
                     />
-                    <div className="product-details">
+                    <div className="product-details-product">
                       <h3 className="product-name">{product.name}</h3>
                     </div>
+                    <button type="submit" className="product-button-readmore">
+                      Read More
+                    </button>
                   </div>
                 </Link>
               </Col>

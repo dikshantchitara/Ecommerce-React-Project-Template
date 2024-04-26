@@ -4,10 +4,8 @@ body {
   font-family: "Oswald", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#FFF5E4;
-  background-repeat: no-repeat;
-    background-size: cover;
-  background-position: center;
+  background-color:#FFF5E4 !important;
+
 
 }
 

@@ -1,10 +1,11 @@
 
-button {
-    background-color: #111827;
+
+button.button-40 {
+    background-color: #FFE3E1;
     border: 1px solid transparent;
     border-radius: .75rem;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #a0a0a0;
     cursor: pointer;
     flex: 0 0 auto;
     font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -24,9 +25,7 @@ button {
     width: auto;
 }
 
-button:hover {
-    background-color: #374151;
-}
+
 
 button:focus {
     box-shadow: none;
