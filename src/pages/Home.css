@@ -37,7 +37,7 @@ h1{
 }
 
 .article-card:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px #102C57;
 }
 .article-image {
   width: 100px;
@@ -74,7 +74,7 @@ h1{
 
 
 .footer {
-    background-color: #000;
+    background-color: #FF9494 !important;
 
     color: #fff;
 
@@ -117,14 +117,17 @@ h1{
     margin-top: 20px;
 }
 
+button{
+    background-color: #FFD1D1 !important;
+}
 
 
 
 /* Home.css */
 
 .custom-card {
-    background-color: #f8f9fa;
-    border: 1px solid #ced4da;
+    /* background-color: #FFE3E1 !important; */
+    border: 1px solid #102C57;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -139,7 +142,7 @@ h1{
 }
 
 .custom-card .card-text {
-    color: #6c757d;
+    color: #000000;
 }
 
 footer h2{

@@ -1,6 +1,7 @@
 
 .container {
     padding: 0 15px;
+    
 }
 
 
@@ -9,6 +10,7 @@ h1 {
 }
 
 .card {
+    background-color: #FFE3E1 !important;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;

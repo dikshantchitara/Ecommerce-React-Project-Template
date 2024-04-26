@@ -7,7 +7,7 @@
          text-align: center;
          font-family: "Abril Fatface", cursive;
          font-size: 0.32rem;
-         color: #2e8074;
+         color: #FF9494;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -19,14 +19,14 @@
          display: block;
          margin: 0 0.2rem;
          flex: 1;
-         border-bottom: 1px solid #2e8074;
+         border-bottom: 1px solid #FF9494;
      }
 
      .wrapper {
             box-sizing: border-box;
             min-height: 100vh;
             padding: 1.1rem 1.3rem;
-            background-color: #bdd6d3;
+            background-color: #FFE3E1;
             width: 80%;
             margin: auto;
             font-family: "Source Sans Pro", sans-serif;
@@ -45,8 +45,8 @@
 
      input[type=radio]:checked+.item .title {
          color: #fff;
-         border-color: #2e8074;
-         background-color: #2e8074;
+         border-color: #FF9494;
+         background-color: #FFE3E1;
      }
 
      input[type=radio]:checked+.item .title:after {
@@ -73,7 +73,7 @@
             font-size: 20px;
             padding: 1.1rem 1.3rem;
             border-radius: 5.3rem;
-            color: #2e8074;
+            color: #FF9494;
             border: 1px solid;
             font-weight: bold;
             cursor: pointer;
@@ -95,7 +95,7 @@
         margin: 0 auto;
         padding: 0 0.3rem;
         line-height: 1.6;
-        color: #2e8074;
+        color: #FF9494;
         border: 1px solid;
         border-width: 0 1px;
         height: 0;

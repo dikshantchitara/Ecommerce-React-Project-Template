@@ -4,7 +4,7 @@ body {
   font-family: "Oswald", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./../public/backgroundg.gif');
+  background-color:#FFF5E4;
   background-repeat: no-repeat;
     background-size: cover;
   background-position: center;
@@ -13,4 +13,5 @@ body {
 
 code {
   font-family: "Oswald", sans-serif !important;
+  color: #FFF5E4;
 }

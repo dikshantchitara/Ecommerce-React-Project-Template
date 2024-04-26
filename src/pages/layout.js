@@ -99,7 +99,7 @@ const Layout = () => {
 
 // Styles
 const navStyle = {
-  backgroundColor: "#333",
+  backgroundColor: "#FF9494",
   padding: "10px",
 };
 
