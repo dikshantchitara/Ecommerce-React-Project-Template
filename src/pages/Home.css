@@ -140,7 +140,10 @@ h1{
 .custom-card .card-text {
     color: #000000;
 }
-
+.nav-link
+{
+    color: #FF9494 !important;
+}
 .card button {
         background-color: #FF9494;
         border: 1px solid transparent;

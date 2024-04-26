@@ -6,7 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { app } from "./firebaseConfig";
-
+import './login.css'
 
 const LoginRegister = ({ show, onClose }) => {
   const [activeTab, setActiveTab] = React.useState("login");
@@ -72,7 +72,7 @@ const LoginRegister = ({ show, onClose }) => {
       </Modal.Header>
       <Modal.Body>
         <Tabs activeKey={activeTab} onSelect={handleTabChange}>
-          <Tab eventKey="login" title="Login">
+          <Tab eventKey="login" title="Login" className="login-tab-title">
             <Form>
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -99,7 +99,7 @@ const LoginRegister = ({ show, onClose }) => {
               </Button>
             </Form>
           </Tab>
-          <Tab eventKey="register" title="Register">
+          <Tab eventKey="register" title="Register" className="login-tab-title">
             <Form>
               <Form.Group controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
