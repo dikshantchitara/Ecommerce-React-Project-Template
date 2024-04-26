@@ -66,7 +66,10 @@ const LoginRegister = ({ show, onClose }) => {
         const user = userCredential.user;
         showAlert("success", "Registration Successful!");
         console.log("Registration Successful", user);
-        handleClose();
+       setTimeout(() => {
+         handleClose();
+         window.location.href = "/products";
+       }, 1000); 
       })
       .catch((error) => {
         showAlert("danger", "Credentials are wrong please try again!");
