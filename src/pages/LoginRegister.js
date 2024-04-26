@@ -7,17 +7,23 @@ import {
 } from "firebase/auth";
 import { app } from "./firebaseConfig";
 import './login.css'
+import { Alert } from "react-bootstrap";
 
 const LoginRegister = ({ show, onClose }) => {
   const [activeTab, setActiveTab] = React.useState("login");
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState(null);
+  const [alerts, setAlerts] = React.useState([]);
 
   const handleClose = () => {
     setError(null);
     onClose();
   };
+   const showAlert = (variant, message) => {
+     const newAlert = { variant, message };
+     setAlerts([...alerts, newAlert]);
+   };
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -25,6 +31,7 @@ const LoginRegister = ({ show, onClose }) => {
 
   const handleLogin = () => {
     if (!email || !password) {
+      showAlert("danger", "Wrong Credentials, Please try again!");
       setError("Please fill in all fields");
       return;
     }
@@ -33,20 +40,22 @@ const LoginRegister = ({ show, onClose }) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        alert("Login Successfully Done!");
+      showAlert("success", "Login Successful!");
         console.log("Login Successful", user);
-        handleClose();
-        window.location.href = "/products";
+        setTimeout(() => {
+          handleClose();
+          window.location.href = "/products";
+        }, 1000); 
       })
       .catch((error) => {
-        alert("Credentials are wrong please try again ");
-        setError(error.message);
+       showAlert("danger", "Wrong Credentials, Please try again!");
+          setError(error.message);
       });
   };
 
   const handleRegister = () => {
     if (!email || !password) {
-      alert("Please Fill in all fields");
+      showAlert("danger", "Please fill the all fields!");
       setError("Please fill in all fields");
       return;
     }
@@ -55,18 +64,28 @@ const LoginRegister = ({ show, onClose }) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
-        alert("Registration Successful");
+        showAlert("success", "Registration Successful!");
         console.log("Registration Successful", user);
         handleClose();
       })
       .catch((error) => {
-        alert("Credentials Are Wrong Please try again!");
+        showAlert("danger", "Credentials are wrong please try again!");
         setError(error.message);
       });
   };
 
   return (
     <Modal show={show} onHide={handleClose}>
+      {alerts.map((alert, index) => (
+        <Alert
+          key={index}
+          variant={alert.variant}
+          onClose={() => setAlerts(alerts.filter((_, i) => i !== index))}
+          dismissible
+        >
+          {alert.message}
+        </Alert>
+      ))}
       <Modal.Header closeButton>
         <Modal.Title>Login/Register</Modal.Title>
       </Modal.Header>

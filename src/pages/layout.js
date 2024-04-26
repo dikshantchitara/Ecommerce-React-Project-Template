@@ -3,12 +3,13 @@ import { Outlet, Link } from "react-router-dom";
 import "./Home.css";
 import LoginRegister from "./LoginRegister";
 import { auth } from "./firebaseConfig";
-import './layout.css'
-
+import "./layout.css";
+import { Alert } from "react-bootstrap"; // Import Bootstrap's Alert component
 
 const Layout = () => {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [user, setUser] = useState(null);
+  const [showLogoutAlert, setShowLogoutAlert] = useState(false); // State for logout alert
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
@@ -27,16 +28,26 @@ const Layout = () => {
   };
 
   const handleLogout = () => {
-    auth
-      .signOut()
-      .then(() => {
-        setUser(null);
-        window.location.href = "/";
-      })
-      .catch((error) => {
-        console.error("Error logging out:", error);
-      });
+    const alertTimeout = 1000; // 3 seconds
+    const logoutMessage = "You have been logged out.";
+
+    // Show alert
+    setShowLogoutAlert(true);
+
+    // Logout after delay
+    setTimeout(() => {
+      auth
+        .signOut()
+        .then(() => {
+          setUser(null);
+          window.location.href = "/";
+        })
+        .catch((error) => {
+          console.error("Error logging out:", error);
+        });
+    }, alertTimeout);
   };
+
   return (
     <>
       <nav style={navStyle}>
@@ -84,15 +95,21 @@ const Layout = () => {
           </li>
         </ul>
       </nav>
-
+      {/* Logout alert */}
+      <Alert
+        variant="info"
+        show={showLogoutAlert}
+        onClose={() => setShowLogoutAlert(false)}
+        dismissible
+      >
+        You have been logged out.
+      </Alert>
       <Outlet />
 
       {/* Render LoginRegister component as a modal */}
-      <LoginRegister
-        key={showLoginModal}
-        show={showLoginModal}
-        onClose={handleCloseLoginModal}
-      />
+      {showLoginModal && (
+        <LoginRegister show={showLoginModal} onClose={handleCloseLoginModal} />
+      )}
     </>
   );
 };
@@ -118,6 +135,5 @@ const linkStyle = {
   color: "#fff",
   textDecoration: "none",
 };
-
 
 export default Layout;
