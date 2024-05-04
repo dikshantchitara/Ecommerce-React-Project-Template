@@ -8,33 +8,112 @@ const Blogs = () => {
     {
       title: "10 Tips for Creating Beautiful Web Designs",
       image: "1.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat."
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
     },
     {
-      title: "The Importance of Responsive Design in Today's Websites",
+      title: "The Importance of Responsive Design ",
       image: "2.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat."
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
     },
     {
       title: "Tips for Creating Engaging Content for Your Blog",
       image: "3.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat."
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
     },
     {
       title: "Tips for Creating Engaging Content for Your Blog",
       image: "4.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat."
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
     },
     {
       title: "Tips for Creating Engaging Content for Your Blog",
       image: "5.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat."
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
     },
-     {
+    {
       title: "Tips for Creating Engaging Content for Your Blog",
       image: "about.svg",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat."
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
     },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "download (5).jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "download (6).jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "download (7).jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "download (10).jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "download (11).jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "download.png",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "Myths & facts 1.jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "Myths & facts 2.jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "Shampoo 1.jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "signature scent 1 (1).jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "signature scent 2 (1).jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+    {
+      title: "Tips for Creating Engaging Content for Your Blog",
+      image: "signature scent 3.jpg",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo nisl vitae ex efficitur fringilla. Proin et urna nec ligula malesuada dignissim. Vivamus malesuada metus nec erat vestibulum, nec bibendum odio accumsan. Integer vel ante at lectus semper consequat.",
+    },
+
     // Add more blog objects as needed
   ];
 
