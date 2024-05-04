@@ -1,22 +1,36 @@
-import React from 'react';
-import { Container, Row, Col, Card, Carousel } from 'react-bootstrap';
-import './Home.css';
-import Footer from './Footer';
+import React from "react";
+import { Container, Row, Col, Card, Carousel } from "react-bootstrap";
+import "./Home.css";
+import Footer from "./Footer";
 import Accordion from "react-bootstrap/Accordion";
 // Array of images for the carousel and cards
 const images = [
-  'Untitled design (1).svg',
-  'Untitled design.svg',
-  'Untitled design (1).png',
-  'Untitled design (2).png',
-  'Untitled design (3).png',
-  'Untitled design (1).svg',
-  'Untitled design.svg',
-  'Untitled design (1).png',
-  'Untitled design (2).png',
-  'Untitled design (3).png',
-  'Untitled design (1).svg',
-  'Untitled design.svg',
+  "Untitled design (1).svg",
+  "Untitled design.svg",
+  "Untitled design (1).png",
+  "Untitled design (2).png",
+  "Untitled design (3).png",
+  "Untitled design (1).svg",
+  "Untitled design.svg",
+  "Untitled design (1).png",
+  "Untitled design (2).png",
+  "Untitled design (3).png",
+  "Untitled design (1).svg",
+  "Untitled design.svg",
+];
+const cardimage = [
+  "01 (1).svg",
+  "01 (2).svg",
+  "01 (3).svg",
+  "01 (4).svg",
+  "01 (5).svg",
+  "01 (6).svg",
+  "01 (7).svg",
+  "01 (8).svg",
+  "01 (9).svg",
+  "01 (10).svg",
+  "01 (11).svg",
+  "01 (12).svg",
 ];
 
 const Home = () => {
@@ -33,7 +47,7 @@ const Home = () => {
 
       <h2 className="mt-5">Our Collections</h2>
       <Row>
-        {images.map((image, index) => (
+        {cardimage.map((image, index) => (
           <Col key={index} xs={12} sm={6} md={4} lg={3} className="mb-4">
             <Card>
               <Card.Img variant="top" src={image} />
